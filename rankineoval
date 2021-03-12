@@ -1,0 +1,12 @@
+clc
+clear all
+X=linspace(-4,4,150);
+Z=linspace(-4,4,150);
+[x,z] = meshgrid(X,Z);
+x0=1;
+sigma=2;
+Uinf= 2;
+a=sqrt(((sigma*x0)/(pi*Uinf))+x0^2);
+psi = Uinf*z+sigma*atan2(z,(x+x0))-sigma*atan2(z,(x-x0));
+figure(1)
+contour(psi,20);
