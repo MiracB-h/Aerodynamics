@@ -1,6 +1,0 @@
-clear all
-clc;
-%Create your 2d domain
-x= input('enter your x direction size');
-y=input(' enter your y direction size');
-[X Y] = meshgrid(x,y);
